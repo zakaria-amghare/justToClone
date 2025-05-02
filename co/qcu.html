@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>TRAITEMENT DU SIGNAL NUM&Eacute;RIQUE - Exercice</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.202 / OpaleGenQuadra 3.7.002">
+  <meta name="revision" content="2025-03-21 01:10">
+  <link rel="start" href="Web_web.html" title="TRAITEMENT DU SIGNAL NUM&Eacute;RIQUE">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"m8i32ejv"};
+/*1*/ window.scLoadParams = {destUri:"/co/qcu.html", pathToRoot:"../"};
+</script>
+  <!--[if lt IE 9]><script type="text/JavaScript" src="../lib-md/w_html5shiv/html5shiv.js"></script><![endif]--><script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scorm.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_dynSizes/dynSizes.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/chi:span.capTi"});
+
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <script type="text/JavaScript">
+outMgr.declareOutline("Traitement_du_Signal_Numeriqque.txt");
+	</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/html.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/struct_page.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/buttons.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/mnu_page.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/mnu_child.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/transf.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/indexes.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt_train.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/sub_windows.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/search.css" media="screen">
+  <!--[if IE]><link type="text/css" rel="stylesheet" href="../skin/css/ie.css" media="screen"/><![endif]-->
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="../skin/css/ie6_page.css" media="screen"/><link type="text/css" rel="stylesheet" href="../skin/css/ie6_sub_windows.css" media="all"/><![endif]--><link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+ </head>
+ <body>
+  <div id="tplFra"><div id="tplTop"><ul id="accessibility"><li class="tplWaiContent"><a class="waiBtn contentWaiBtn" href="#content" title="aller au contenu"><span>contenu</span></a></li><li class="tplWaiMenu"><a class="waiBtn menuWaiBtn" href="#menu" title="aller au menu"><span>menu</span></a></li><li class="tplWaiNav"><a class="waiBtn navWaiBtn" href="#navigation" title="aller &agrave; la navigation"><span>navigation</span></a></li><li class="tplWaiFoot"><a class="waiBtn footWaiBtn" href="#footer" title="aller au pied de page"><span>pied de page</span></a></li></ul><noscript>Attention, votre navigateur ne supporte pas le javascript ou celui-ci a &eacute;t&eacute; d&eacute;sactiv&eacute;. Certaines fonctionnalit&eacute;s de ce module sont restreintes.</noscript><h1 id="titleRoot"><span>TRAITEMENT DU SIGNAL NUM&Eacute;RIQUE</span></h1></div><div id="tplLft"><hr class="hidden"><a id="tools" class="accessAnc" name="tools" href="#tools"></a><strong class="hidden">Mode&nbsp;: </strong><ul class="mnuMode"><li><span class="playBtnSel"><img alt="Cours" src="../skin/img/btn/playSel.png" class="btnImg"><span class="btnLbl">Cours</span></span></li></ul></div><div id="tplMain" class="tplMainMnu_open"><div id="tplMnu"><hr class="hidden"><a id="menu" class="accessAnc" name="menu" href="#menu"></a><strong class="hidden">Menu&nbsp;: </strong><div class="mnuBlock"></div><div class="mnuFra"><ul class="mnu mnu_static  mnu_sch_no"><li class="mnu_sel_no mnu_b mnu_dpt_0 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_dpt_0 mnu_ueDiv mnu_sch_no" id="Traitement_du_Signal_Numeriqque.html"><a href="Traitement_du_Signal_Numeriqque.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Introduction au traitement du signal</span></span></a></div><ul class="mnu_sub mnu_sub_o"><li class="mnu_sel_no mnu_b mnu_dpt_1 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_b_c mnu_dpt_1 mnu_ueDiv mnu_sch_no" id="Traitement_du_Signal_Numeriqque_1.html"><a href="Traitement_du_Signal_Numeriqque_1.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Signal et syst&egrave;me</span></span></a></div></li><li class="mnu_sel_no mnu_b mnu_dpt_1 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_dpt_1 mnu_ueDiv mnu_sch_no" id="Traitement_du_Signal_Numeriqque_3.html"><a href="Traitement_du_Signal_Numeriqque_3.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Classification des signaux</span></span></a></div><ul class="mnu_sub mnu_sub_o"><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc mnu_sch_no" id="Traitement_du_Signal_Numeriqque_4.html"><a href="Traitement_du_Signal_Numeriqque_4.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Classification selon la pr&eacute;visibilit&eacute; du signal (ph&eacute;nom&eacute;nologique)</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc mnu_sch_no" id="Traitement_du_Signal_Numeriqque_11.html"><a href="Traitement_du_Signal_Numeriqque_11.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Classification selon la sym&eacute;trie du signal</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc mnu_sch_no" id="Traitement_du_Signal_Numeriqque_12.html"><a href="Traitement_du_Signal_Numeriqque_12.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Classification selon l'&eacute;nergie du signal (&eacute;nerg&eacute;tique)</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc mnu_sch_no" id="Traitement_du_Signal_Numeriqque_13.html"><a href="Traitement_du_Signal_Numeriqque_13.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Classification selon la nature du temps et de l'amplitude (morphologique)</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc mnu_sch_no" id="Traitement_du_Signal_Numeriqque_14.html"><a href="Traitement_du_Signal_Numeriqque_14.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Classification spectrale</span></span></a></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_expUc mnu_sch_no" id="Traitement_du_Signal_Numeriqque_15.html"><a href="Traitement_du_Signal_Numeriqque_15.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Signaux particuliers</span></span></a></div></li><li class="mnu_sel_yes mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_yes mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcu.html"><span class="mnu_i"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice</span></span></span></div></li><li class="mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc"><div class="mnuLbl mnu_sel_no mnu_l mnu_dpt_2 mnu_trainUc mnu_sch_no" id="qcu_02.html"><a href="qcu_02.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Exercice</span></span></a></div></li></ul></li><li class="mnu_sel_no mnu_b mnu_dpt_1 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_b_c mnu_dpt_1 mnu_ueDiv mnu_sch_no" id="Traitement_du_Signal_Numeriqque_5.html"><a href="Traitement_du_Signal_Numeriqque_5.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Repr&eacute;sentation d'un signal dans les domaines fr&eacute;quentiel et temporel</span></span></a></div></li></ul></li><li class="mnu_sel_no mnu_b mnu_dpt_0 mnu_ueDiv"><div class="mnuLbl mnu_sel_no mnu_b mnu_b_c mnu_dpt_0 mnu_ueDiv mnu_sch_no" id="Traitement_du_Signal_Numeriqque_7.html"><a href="Traitement_du_Signal_Numeriqque_7.html" target="_self" class="mnu_i mnu_lnk"><span class="mnu_sch"><span><span class="mnu_cursor"></span>Traitement du signal analogique</span></span></a></div></li></ul><script type="text/javascript">scServices.totalPages = 34;</script></div><div id="tplIco"><div class="decoTrainUc"></div></div></div><div id="tplCo"><div class="scroller"><hr class="hidden"><a id="content" class="accessAnc" name="content" href="#content"></a><strong class="hidden">Contenu&nbsp;: </strong><div id="tplCoMarginW" style><div id="tplCoFlexTop"></div><div class="mainContent"><p id="noJsWarn">Attention, votre navigateur ne supporte pas le javascript ou celui-ci a &eacute;t&eacute; d&eacute;sactiv&eacute;. Certaines fonctionnalit&eacute;s dynamiques de ce module sont restreintes.</p><script type="text/JavaScript">var vNoJsWarn = scPaLib.findNode("ide:noJsWarn");
+if (vNoJsWarn && vNoJsWarn.parentNode) vNoJsWarn.parentNode.removeChild(vNoJsWarn);
+</script><div class="divQuiz"><script type="text/JavaScript">
+var mdCD5QZOBubgoD4FlagaKf = {
+
+	fId : "mdCD5QZOBubgoD4FlagaKf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.mdCD5QZOBubgoD4FlagaKf_form;
+		for (var i=0; i < vForm.mdCD5QZOBubgoD4FlagaKf_input.length; i++) {
+			vForm.mdCD5QZOBubgoD4FlagaKf_input[i].disabled = false;
+			vForm.mdCD5QZOBubgoD4FlagaKf_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("mdCD5QZOBubgoD4FlagaKf_in"+vResp).checked = true;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_choiceList"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_gExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_score"), "invisible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_question"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_chExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_chExpln"), "collapsed");
+scAssmntMgr.setToggleStatus(sc$("mdCD5QZOBubgoD4FlagaKf_S_N69"), false);
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.mdCD5QZOBubgoD4FlagaKf_form.mdCD5QZOBubgoD4FlagaKf_input[1].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.mdCD5QZOBubgoD4FlagaKf_input.length; i++) if(vForm.mdCD5QZOBubgoD4FlagaKf_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.mdCD5QZOBubgoD4FlagaKf_input.length) ? vForm.mdCD5QZOBubgoD4FlagaKf_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN90 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN69 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_score"), "invisible");
+this.setSolution(false); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_gExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_chExpln"), "collapsed"); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_chExpln"), "collapsed"); 
+		} else {
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_score"), "visible");
+this.setSolution(true); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_gExpln"), "visible");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_chExpln"), "visible"); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_chExpln"), "visible"); 
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+this.setSolution(true); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_chExpln"), "visible"); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_chExpln"), "visible"); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_gExpln"), "visible");
+
+	},
+	fct_cleanSol : function(){
+this.setSolution(false); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N_gExpln"), "collapsed");
+scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N0_chExpln"), "collapsed"); scAssmntMgr.setMode(sc$("mdCD5QZOBubgoD4FlagaKf_N1_chExpln"), "collapsed"); 
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.mdCD5QZOBubgoD4FlagaKf_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("mdCD5QZOBubgoD4FlagaKf_SNb0");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.mdCD5QZOBubgoD4FlagaKf_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("mdCD5QZOBubgoD4FlagaKf_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = mdCD5QZOBubgoD4FlagaKf;
+scOnUnloads[scOnUnloads.length] = mdCD5QZOBubgoD4FlagaKf;
+</script><div id="mdCD5QZOBubgoD4FlagaKf_A" style="display:none;"><div class="bkSolResOut"><div class="bkSolResFra1"><div class="bkSolResFra2"><div class="bkSolResFra3"><div class="bkSolResCo"><div class="btnCorrection"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="mdCD5QZOBubgoD4FlagaKf.onActionN69(this); return false;" class="btnQuiz " id="mdCD5QZOBubgoD4FlagaKf_S_N69"><span class="btnQuizCaption">Correction</span></a></div><div class="btnReset"><a role="button" title="Effacer les r&eacute;ponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="mdCD5QZOBubgoD4FlagaKf.onActionN90(this); return false;" class="btnQuiz "><span class="btnQuizCaption">Recommencer</span></a></div><div class="scoreBox"><div class="score " aria-live="polite" id="mdCD5QZOBubgoD4FlagaKf_N_score"><div id="mdCD5QZOBubgoD4FlagaKf_SNb0"><span></span></div></div></div></div></div></div></div></div><div class="headerQ"><div id="mdCD5QZOBubgoD4FlagaKf_N_question" class="question"><div><p class="op_txt_p">Qu'est ce qu'un signal &eacute;nerg&eacute;tique&nbsp;?</p></div></div></div><div id="mdCD5QZOBubgoD4FlagaKf_N_choiceList"><form action name="mdCD5QZOBubgoD4FlagaKf_form" id="mdCD5QZOBubgoD4FlagaKf_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="mdCD5QZOBubgoD4FlagaKf_input" id="mdCD5QZOBubgoD4FlagaKf_in0" value="0" onclick="mdCD5QZOBubgoD4FlagaKf.setResp(this, 0);" aria-labelledby="mdCD5QZOBubgoD4FlagaKf_lbl0"></td><td class="choiceList_la " id="mdCD5QZOBubgoD4FlagaKf_lbl0"><div id="mdCD5QZOBubgoD4FlagaKf_N0_choice" class="choice"><div id="mdCD5QZOBubgoD4FlagaKf_N0_label" class="label"><p class="op_txt_p">Un signal &agrave; une &eacute;nergie infini</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="mdCD5QZOBubgoD4FlagaKf_input" id="mdCD5QZOBubgoD4FlagaKf_in1" value="1" onclick="mdCD5QZOBubgoD4FlagaKf.setResp(this, 1);" aria-labelledby="mdCD5QZOBubgoD4FlagaKf_lbl1"></td><td class="choiceList_la " id="mdCD5QZOBubgoD4FlagaKf_lbl1"><div id="mdCD5QZOBubgoD4FlagaKf_N1_choice" class="choice"><div id="mdCD5QZOBubgoD4FlagaKf_N1_label" class="label"><p class="op_txt_p">Un signal &agrave; une &eacute;nergie fini</p></div></div></td></tr></table></form></div></div></div></div></div><div id="tplCoSpacer"></div></div></div></div><div id="tplRgt"><hr class="hidden"><a id="navigation" class="accessAnc" name="navigation" href="#navigation"></a><strong class="hidden">Navigation&nbsp;: </strong><a href="Traitement_du_Signal_Numeriqque_15.html" target="_self" class="navBtn prevBtn btnPrv" title="Pr&eacute;c&eacute;dent (Signaux particuliers)"><span><img alt="Pr&eacute;c&eacute;dent" src="../skin/img/btn/prev.png" onmouseover="this.src='../skin/img/btn/prevOver.png';" onmouseout="this.src='../skin/img/btn/prev.png';" class="btnImg"><span class="btnLbl">Pr&eacute;c&eacute;dent</span></span></a><span class="hidden"> | </span><a href="qcu_02.html" target="_self" class="navBtn nextBtn btnNxt" title="Suivant (Exercice)"><span><img alt="Suivant" src="../skin/img/btn/next.png" onmouseover="this.src='../skin/img/btn/nextOver.png';" onmouseout="this.src='../skin/img/btn/next.png';" class="btnImg"><span class="btnLbl">Suivant</span></span></a></div><div id="tplBtm"><hr class="hidden"><a id="footer" class="accessAnc" name="footer" href="#footer"></a><span id="tplBtmLeft"><a class="homeBtn " target="_self" href="Web_web.html" title="Accueil"><span><img alt="Accueil" src="../skin/img/btn/home.png" onmouseover="this.src='../skin/img/btn/homeOver.png';" onmouseout="this.src='../skin/img/btn/home.png';" class="btnImg"><span class="btnLbl">Accueil</span></span></a><span class="hidden"> | </span><a href="#" onclick="window.print();return false;" class="printBtn" title="Imprimer la page"><span><img alt="Imprimer" src="../skin/img/btn/print.png" onmouseover="this.src='../skin/img/btn/printOver.png';" onmouseout="this.src='../skin/img/btn/print.png';" class="btnImg"><span class="btnLbl">Imprimer</span></span></a></span><span id="tplBtmIn"><span class="hidden"> | </span><span class="legalInfo">
+								<span class="op_sPara_p">Universit&eacute; des Sciences et de la Technologie Houari Boumediene (USTHB)</span>
+								</span><span class="hidden"> | </span><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/struct/scBtn.png"></span></a></span></div></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();new scSiRuleAutoMarginW("tplCoMarginW","ide:tplCo",true,510,100);new scSiRuleFlexH("tplCoFlexTop","ide:tplCo",true,.3);outMgr.init("ide:tplMain","ide:tplMnu","ide:tplMnu/des:ul.mnu");scImgMgr.init();</script>
+ </body>
+</html>
